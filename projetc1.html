@@ -1,0 +1,124 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title> Storytellers  </title>
+    
+  <link rel="stylesheet" href="-project/style.css">
+  </head>
+  <body>
+    <div>
+    <h1>
+    <br> Storytellers </br> 
+      Clarice Lispector
+     </h1>
+        <ul>
+     <li class="moreinformationpt">
+        <a href="https://en.wikipedia.org/wiki/Clarice_Lispector" target="_blank"> The Complete Biography  </a>
+      </li>
+      <li class="books">
+        <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://rocco.com.br/especial/clarice-lispector/&ved=2ahUKEwi_xvOGrdOLAxUlBbkGHXuSNFoQFnoECBYQAQ&usg=AOvVaw1jfipiywbe6UMYgpvYUh_8" target="_blank"> Buy her Books </a>
+      </li>
+       <li class="video">
+        <a href="https://www.youtube.com/watch?v=w1zwGLBpULs&pp=ygUZY2xhcmljZSBsaXNwZWN0b3IgZW5nbGlzaA%3D%3D" target="_blank"> Interview in Portuguese with English subtitles</a>
+      </li>
+  </ul>
+     <h2>
+        Get a sneak peek at our feature on Clarice Lispector, a writer who uses simple language to explore the deep struggles of women in life-changing situations.
+     </h2>
+     <h3>
+        <div class = padding-text>
+       <img src="https://i.postimg.cc/7LvC83GR/clarice-lispector.jpg" alt="Image description" />
+        <div class = "biography">
+        </br>
+               <br> <strong> Clarice Lispector </br> </strong>(born December 10, 1920, Chechelnyk, Ukraine, Russian Empire—died December
+         9, 1977, Rio de Janeiro, Brazil) was a novelist and short-story writer,  one of Brazil’s most important 
+         literary figures, who is considered to be among the greatest women writers of the 20th century.
+         Her first novel, Perto do coração selvagem (1944; Near to the Wild Heart), published when she was 
+         24 years old, won critical acclaim for its sensitive interpretation of adolescence. In her later works, 
+         such as A maçã no escuro (1961; The Apple in the Dark), A paixão segundo G.H. (1964; The Passion According to G.H.),
+          Água viva (1973; The Stream of Life ), A hora da estrela (1977; The Hour of the Star), and Um sopro de vida: pulsações (1978; 
+          A Breath of Life), her characters, alienated and searching for meaning in life, gradually gain a sense of awareness of themselves
+           and accept their place in an arbitrary, yet eternal, universe. In 2011 the publishing company New Directions issued a new translation
+            of A hora da estrela and in 2012 issued new translations of Perto do coração selvagem, Água viva, and A paixão segundo G.H.
+       </div> </div>
+
+ </h3>
+      <div class = "newsletterButton" >
+        <button>
+            <br> Want to read her work? Subscribe to your newsletter now! </br>
+        </button>
+        </div>
+     <h5>
+        Code by Jade Gonçalves
+       </h5>
+
+    </div>
+       <script> 
+     function newsletterButton() {
+      let name = prompt ("What are your name?");
+      let email = prompt ("What is your email?");
+      let language = prompt ("Would you like to read her text in Portuguese?");
+      let h3= document.querySelector("h3");
+       if (language.toLowerCase() === "yes" || language.toLowerCase() === "sim" || language.toLowerCase() === "yeah") {
+          h3.innerHTML =   `    
+           <div class = "textoriginal" >  <strong> Seja bem-vindo ${name} ! Que este trecho de Clarice Lispector te inspire a conhecer mais sobre a autora </strong>
+           <img src="https://i.postimg.cc/2yYNF5t3/36100743-PV-Rio-de-Janeiro-RJ-10-11-2009-Clarice-Lispector-escritora-em-1961-Foto-Claudia-Andujar.jpg" alt="Image description" />
+            </div><br> 
+            <div class = "textoriginal2" > 
+               <br> Uma aprendizagem ou O livro dos prazeres </br>
+             Existe um ser que mora dentro de mim como se fosse a casa
+              dele, e é. Trata-se de um cavalo preto e lustroso que
+               apesar de inteiramente selvagem – pois nunca morou 
+               antes em ninguém nem jamais lhe puseram rédeas nem 
+               sela – apesar de inteiramente selvagem tem por isso
+                mesmo uma doçura primeira de quem não tem medo: 
+                come às vezes na minha mão. Seu focinho é úmido e 
+                fresco. Eu beijo o seu focinho. Quando eu morrer,
+                 o cavalo preto ficará sem casa e vai sofrer muito.
+                  A menos que ele escolha outra casa e que esta
+                   outra casa não tenha medo daquilo que é ao
+                    mesmo tempo selvagem e suave. Aviso que ele não
+                     tem nome: basta chamá-lo e se acerta com seu nome. Ou não se acerta, mas, 
+                     uma vez chamado com doçura e autoridade, ele vai. Se ele fareja e sente que 
+                     um corpo-casa é livre, ele trota sem ruídos e vai. Aviso também que não se deve
+                      temer o seu relinchar: a gente se engana e pensa que é a gente mesma que está relinchando
+                       de prazer ou de cólera, a gente se assusta com o excesso de doçura do que é isto pela primeira vez.
+                       </div>
+                       </br> `
+             h1.innerHTML = `  VIDA 
+          `
+         ;
+        } else  {
+       h3.innerHTML =   `
+        <div class = "textoriginal" >  Welcome ${name} ! I hope this excerpt from Clarice Lispector inspires you to explore more of her work.
+        <img src="https://i.postimg.cc/2yYNF5t3/36100743-PV-Rio-de-Janeiro-RJ-10-11-2009-Clarice-Lispector-escritora-em-1961-Foto-Claudia-Andujar.jpg" alt="Image description" /> </div>
+        <<div class = "textoriginal2" > 
+        <br>HOW TO TREAT ONE’S POSSESSIONS </br>
+        There is a creature living inside me as if he were at home, and he is.
+         He is a black horse with a shiny coat and although completely 
+         wild – for he has never lived inside anyone before nor ever been saddled
+          – although completely wild, this gives him that primitive sweetness of a creature without fear.
+           His nose is moist and fresh. I love kissing that nose. When I die, the black horse will be homeless 
+           and suffer a great deal. Unless he can find another home where no one will be afraid of this creature
+            who can be savage and at the same time so gentle. I must warn you that the horse is nameless: 
+            you need only call him in order to discover his name. Or perhaps you will not discover it, 
+            but once called with tenderness and authority, he comes. If his sense of smell tells him that a
+             body is free, he comes trotting up quietly. But I should warn you not to be afraid when he neighs: 
+             you could easily be deceived into thinking some human being is giving voice to pleasure or wrath.
+             </div>
+       
+       `;
+       alert("Portuguese brings out the beauty of her writing, so try to learn it. In the meantime, here’s the English version—I hope you like it!");
+      }
+    }
+    
+      let button = document.querySelector("button");
+    button.addEventListener( "click", newsletterButton);
+
+     
+    
+       </script>
+  </body>
+</html>
